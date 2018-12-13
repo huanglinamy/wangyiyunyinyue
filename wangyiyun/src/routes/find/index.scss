@@ -1,0 +1,56 @@
+:global{
+    .findlist{
+        width:100%;
+        height:100%;
+        display:flex;
+        flex-direction: column;
+        overflow: hidden;
+        .header1{
+          width:100%;
+          height:1rem;
+          background:rgb(233, 115, 115);
+          display:flex;
+          justify-content:space-between;
+          align-items: center;
+          padding:0 0.15rem;
+          position: fixed;
+          left:0;
+          top:0;
+          z-index:999;
+          p{
+            width:0.6rem;
+            height:0.6rem;
+            margin-top:0.3rem;
+            img{
+              width:100%;
+              height:100%;
+            }
+          }
+          label{
+            flex:1;
+            padding:0 0.2rem;
+            input{
+              width:100%;
+              height:0.6rem;
+              border:0;
+              outline: none;
+              border-radius: 1rem;
+              text-align:center;
+            }
+          }
+        }
+        .nav1{
+          width:100%;
+          height:1rem;
+          background:#fff;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          position: fixed;
+          left:0;
+          top:1rem;
+          z-index:999;
+        }
+      
+      }
+}
