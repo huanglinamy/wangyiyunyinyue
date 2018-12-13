@@ -28,7 +28,9 @@ class Hot extends React.PureComponent {
         <div className="across1">
           <dl>
             <dt><img src={require('../../assets/p1.jpg')} alt="" /></dt>
-            <dd>私人FM</dd>
+            <dd onClick={() => {
+              window._hmt.push(['_trackEvent', '网易云音乐', '按钮点击', '搜索按钮'])
+            }}>私人FM</dd>
           </dl>
           <dl>
             <dt><img src={require('../../assets/p2.jpg')} alt="" /></dt>

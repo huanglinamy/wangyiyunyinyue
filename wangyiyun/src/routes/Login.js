@@ -50,7 +50,7 @@ class Login extends React.PureComponent {
         }
         this.props.login({
             phone: this.state.phone,
-            password: this.state.password
+            password: this.state.password 
         })
     }
 

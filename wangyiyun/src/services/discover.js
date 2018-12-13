@@ -1,6 +1,8 @@
 import request from '../utils/request'; //登录
 
-const host = /localhost/.test(window.location.host)?'http://123.206.55.50:14000':'';
+// const host = /localhost/.test(window.location.host)?'http://123.206.55.50:14000':'';
+const host = /localhost/.test(window.location.host)?'http://123.206.55.50:14000':'http://123.206.55.50:14000';
+
 // 获取banner
 export function getBanner(){
   return request(`${host}/banner`)
