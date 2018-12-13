@@ -10,6 +10,10 @@ class Hot extends React.PureComponent {
     this.props.updateBanner()
     this.props.updateAbreast()
   }
+  click(){
+    console.log('_htm',window._hmt);
+    window._hmt.push(['_trackEvent','网易云音乐','按钮点击','搜索按钮']);
+  }
   render() {
     let { banner, abreast } = this.props
     return (
@@ -28,9 +32,7 @@ class Hot extends React.PureComponent {
         <div className="across1">
           <dl>
             <dt><img src={require('../../assets/p1.jpg')} alt="" /></dt>
-            <dd onClick={() => {
-              window._hmt.push(['_trackEvent', '网易云音乐', '按钮点击', '搜索按钮'])
-            }}>私人FM</dd>
+            <dd onClick={()=>this.click}>私人FM</dd>
           </dl>
           <dl>
             <dt><img src={require('../../assets/p2.jpg')} alt="" /></dt>
